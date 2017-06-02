@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>NeighborhoodWatchApp</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+  </head>
+
+  <body>
+  	<%= render(partial: 'shared/nav') %>
+    <%= yield %>
+    <%= render(partial: 'shared/footer') %>
+  </body>
+</html>
